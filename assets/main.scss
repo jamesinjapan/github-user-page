@@ -3,3 +3,29 @@
 ---
 
 @import "minima";
+
+pre, code {
+  background-color: #202020;
+  padding: 0;
+  color: #fefefc;
+  border: none;
+  font-family: Inconsolata;
+}
+
+.rouge-table {
+  margin: 0;
+}
+
+.rouge-table .gutter {
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  color: #122c41 !important;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

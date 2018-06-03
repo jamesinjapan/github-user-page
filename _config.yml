@@ -32,11 +32,13 @@ disqus:
 
 # Build settings
 markdown: kramdown
+kramdown: 
+  input: GFM
+  syntax-highlighter: rouge
+  
 plugins:
   - jekyll-feed
-gems:
   - jekyll-extlinks
-  
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
