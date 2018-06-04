@@ -1,16 +1,25 @@
 ---
 layout: post
 title:  "Making a Javascript Calculator"
-date: 2018-06-03 08:00:00 +09:00
-date: 2018-06-03 08:00:00 +09:00
+featured-image: /assets/javascript-calculator.jpg
+date: 2018-06-04 01:30:00 +09:00
+updated: 2018-06-04 22:00:00 +09:00
 comments: true
 category: [projects, javascript]
 ---
-There is no better way to learn programming than to get stuck into some projects. So as a way to build my own portfolio and to improve my skills as a whole, I will write a few posts about the process of making small projects. Today I will make a basic javascript calculator on CodePen.
 
-[Check it out before we begin!](https://codepen.io/jamesinjapan/full/dKGyWP/)
+There is no better way to learn programming than to get stuck into some projects. So as a way to build my own portfolio and to improve my skills as a whole, I will write a few posts about the process of making small projects. Today I will make a [basic javascript calculator on CodePen](https://codepen.io/jamesinjapan/full/dKGyWP/).
 
-![My Javascript Calculator](/assets/javascript-calculator.jpg "Javascript Calculator")
+Update (2018/06/4)
+------------------
+
+After waking up and trying to check the CodePen on my iPhone, I realised I have some bugs to fix. Keep an eye out for a future post to address the background image not displaying for iOS devices, also ensuring that results that are longer than 12 characters are handled as exponentials. 
+
+Also note that I changed some of the dimensions to ensure the calculator fit on my phone screen. Perhaps we need to make the calculator responsive at different sizes too. 
+
+A final thing I might add in via an updated post is some tests. 
+
+WATCH THIS SPACE!
 
 Specification
 -------------
@@ -20,6 +29,10 @@ What do we need from our calculator? Well, it should have a number pad to enter 
 Like a regular calculator we will want the user to be able to add to the product of a previous function, as well as keep a number in memory.
 
 Additionally, it might be nice to have a backspace function for when you accidentally enter the wrong number, and maybe also the ability to make the current number positive or negative.
+
+You can check out the features that I've implemented in the final product below.
+
+{% include javascript-calculator.html %}
 
 Setting up the frontend
 -----------------------
@@ -602,4 +615,4 @@ The final thing I wanted to do was the give the buttons some padding and a sligh
 Wrapping up
 -----------
 
-So there it is, a functioning calculator made from scratch in HTML, CSS and Javascript. I hope you like what you see and remember to keep working on small projects to build your experience.
+So there it is, a functioning calculator made from scratch in HTML, CSS and Javascript. I hope you like what you see and remember to keep working on small projects to build your experience.g

@@ -13,6 +13,9 @@ layout: default
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
+        {% if post.featured-image %}
+          <img class="featured-image-banner" src="{{ post.featured-image | asset_path }}" />
+        {% endif %}
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -34,7 +37,6 @@ layout: default
       <hr>
       {%- endfor -%}
     </ul>
-
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 

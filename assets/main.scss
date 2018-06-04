@@ -21,11 +21,40 @@ pre, code {
   text-align: center;
 }
 
-a {
-  color: #122c41 !important;
-  text-decoration: underline;
+header a {
+  color: #ced6b7 !important;
+  text-decoration: none;
+  text-shadow: 1px 2px 3px #A5AB8E;
+
 
   &:hover {
     text-decoration: none;
   }
+}
+
+a {
+  color: #354F4C !important;
+  text-decoration: underline;
+  text-shadow: 1px 2px 3px #A5AB8E,
+               -1px -1px 2px #C9D685;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.featured-image-banner {
+  width: 100%;
+}
+
+hr { 
+  border: 0; 
+  height: 0; 
+  width: 75%;
+  margin: 0 auto 50px auto;
+  box-shadow: 0 0 5px 1px #1c2329; 
+} 
+
+hr {
+  content: "\00a0"; 
 }
