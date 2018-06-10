@@ -3,8 +3,9 @@ layout: post
 title:  "Making a Javascript Calculator"
 featured-image: /assets/javascript-calculator.jpg
 date: 2018-06-04 01:30:00 +09:00
-updated: 2018-06-04 22:00:00 +09:00
+updated: 2018-06-10 12:00:00 +09:00
 comments: true
+contents: true
 category: [projects, javascript]
 ---
 
@@ -32,7 +33,7 @@ Additionally, it might be nice to have a backspace function for when you acciden
 
 You can check out the features that I've implemented in the final product below.
 
-{% include javascript-calculator.html %}
+{% codepen https://codepen.io/jamesinjapan/pen/dKGyWP/ height=800 preview=true %}
 
 Setting up the frontend
 -----------------------

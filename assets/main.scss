@@ -21,10 +21,39 @@ pre, code {
   text-align: center;
 }
 
+#toc {
+  float: right;
+  background: #e1e9f0 none repeat scroll 0 0;
+  border: 1px solid #999;
+  border-radius: 10px;
+  font-size: 95%;
+  margin: 0 0 3vw 3vw;
+  padding: 10px;
+  width: auto;
+}
+
+#toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc ul {
+    list-style: outside lower-roman none !important;
+}
+
+.wrap-table {
+  border: none !important;
+  width: 100%;
+}
+
+.wrap-table td {
+  border: none !important;
+  text-align: center;
+}
+
 header a {
   color: #ced6b7 !important;
   text-decoration: none;
-  text-shadow: 1px 2px 3px #A5AB8E;
 
 
   &:hover {
@@ -35,8 +64,6 @@ header a {
 a {
   color: #354F4C !important;
   text-decoration: underline;
-  text-shadow: 1px 2px 3px #A5AB8E,
-               -1px -1px 2px #C9D685;
 
   &:hover {
     text-decoration: none;
@@ -45,6 +72,7 @@ a {
 
 .featured-image-banner {
   width: 100%;
+  box-shadow: 8px 8px 10px #aaa;
 }
 
 hr { 
@@ -57,4 +85,52 @@ hr {
 
 hr {
   content: "\00a0"; 
+}
+
+.jekyll-twitter-plugin iframe {
+  margin: 10px auto;
+}
+
+p.rss-subscribe {
+  grid-area: sub;
+}
+
+div.posts-container {
+  grid-area: posts;
+}
+
+div.home {
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 50px;
+  grid-template-areas:
+    "posts"
+    "sub";
+}
+
+@media only screen and (min-width: 800px) {
+  div.posts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-areas:
+      ". .";
+  }
+
+}
+
+@media only screen and (max-width: 799px) {
+  
+  div.posts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      ".";
+  }
+  
 }

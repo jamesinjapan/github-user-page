@@ -39,6 +39,8 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-extlinks
+  - jekyll-twitter-plugin
+  - jekyll-codepen
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
